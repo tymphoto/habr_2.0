@@ -13,6 +13,9 @@
     "allowJs": true,
     "moduleResolution": "node",
     "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     // esModuleInterop позволяет работаеть с пакетами, которые используют
     // common js как с обычными пакетами с помощью import (require() module.exports) = common js
     // import Moment from 'moment'
