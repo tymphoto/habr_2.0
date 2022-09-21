@@ -5,7 +5,8 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    "plugin:react/jsx-runtime",
+    'plugin:react/jsx-runtime',
+    'plugin:i18next/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -18,6 +19,7 @@ module.exports = {
   plugins: [
     'react',
     '@typescript-eslint',
+    'i18next'
   ],
   rules: {
     'react/jsx-indent': [2, 2],
@@ -32,6 +34,10 @@ module.exports = {
     'react/require-defualt-props': 'off',
     'react/prop-types': 'off',
     'no-shadow': 'off',
-    'import/extentions': 'off'
+    'import/extentions': 'off',
+    'i18next/no-literal-string': ['error', { markupOnly: true }],
   },
 };
+
+  
+    
