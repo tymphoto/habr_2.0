@@ -1,4 +1,4 @@
-import { Suspense, useEffect } from 'react';
+import { Suspense } from 'react';
 import './styles/index.scss';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Navbar } from 'widgets/Navbar';
