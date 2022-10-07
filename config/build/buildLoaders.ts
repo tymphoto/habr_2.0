@@ -10,7 +10,7 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
 
   const babelLoader = {
     test: /\.(js|jsx|tsx)$/,
-    exclude: /(node_modules|bower_components)/,
+    exclude: /node_modules/,
     use: {
       loader: 'babel-loader',
       options: {
@@ -30,6 +30,7 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
 
   const cssLoader = buildCssLoader(isDev);
 
+  // Если не используем тайпскрипт - нужен babel-loader
   const typescriptLoader = {
     test: /\.tsx?$/,
     use: 'ts-loader',

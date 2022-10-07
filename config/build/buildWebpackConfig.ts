@@ -1,4 +1,5 @@
 import webpack from 'webpack';
+import path from 'path';
 import { BuildOptions } from './types/config';
 import { buildPlugins } from './buildPlugins';
 import { buildLoaders } from './buildLoaders';
@@ -7,6 +8,7 @@ import { buildDevServer } from './buildDevServer';
 
 export function buildWebpackConfig(options: BuildOptions): webpack.Configuration {
   const { paths, mode, isDev } = options;
+
   return {
     mode,
     entry: paths.entry,

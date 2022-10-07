@@ -1,6 +1,6 @@
-import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-
+import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator';
+import { Theme } from 'app/providers/ThemeProvider';
 import { Button, ThemeButton } from './Button';
 
 export default {
@@ -29,3 +29,10 @@ Outline.args = {
   children: 'Text',
   theme: ThemeButton.OUTLINE,
 };
+
+export const OutlineDark = Template.bind({});
+OutlineDark.args = {
+  children: 'Text',
+  theme: ThemeButton.OUTLINE,
+};
+OutlineDark.decorators = [ThemeDecorator(Theme.DARK)];
