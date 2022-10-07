@@ -6,7 +6,7 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
+    'airbnb',
     'plugin:i18next/recommended',
   ],
   parser: '@typescript-eslint/parser',
@@ -20,30 +20,34 @@ module.exports = {
   plugins: [
     'react',
     '@typescript-eslint',
-    'i18next'
+    'i18next',
   ],
   rules: {
     'react/jsx-indent': [2, 2],
     'react/jsx-indent-props': [2, 2],
     indent: [2, 2],
-    'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+    'react/jsx-filename-extension': [
+      2,
+      { extensions: ['.js', '.jsx', '.tsx'] },
+    ],
     'import/no-unresolved': 'off',
-    'import/prefer-defualt-export': 'off',
-    'react/react-in-jsx-scope': 0,
-    'react/jsx-uses-react': 0,
+    'import/prefer-default-export': 'off',
     'no-unused-vars': 'warn',
-    'react/require-defualt-props': 'off',
-    'react/prop-types': 'off',
+    'react/require-default-props': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-props-no-spreading': 'warn',
+    'react/function-component-definition': 'off',
     'no-shadow': 'off',
-    'import/extentions': 'off',
-    'i18next/no-literal-string':
-     [
-       'error', 
-       { 
-         markupOnly: true, 
-         ignoreAttribute: ['data-testid', 'to'] 
-       }
-     ],
+    'import/extensions': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'no-underscore-dangle': 'off',
+    'i18next/no-literal-string': [
+      'error',
+      {
+        markupOnly: true,
+        ignoreAttribute: ['data-testid', 'to'],
+      },
+    ],
     'max-len': ['error', { ignoreComments: true, code: 100 }],
   },
   globals: {
@@ -54,10 +58,7 @@ module.exports = {
       files: ['**/src/**/*.test.{ts,tsx}'],
       rules: {
         'i18next/no-literal-string': 'off',
-      }
-    }
-  ]
+      },
+    },
+  ],
 };
-
-  
-    

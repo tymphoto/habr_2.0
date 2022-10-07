@@ -1,5 +1,5 @@
-import React, { ErrorInfo, ReactNode, Suspense } from "react";
-import { PageError } from "widgets/PageError";
+import React, { ErrorInfo, ReactNode, Suspense } from 'react';
+import { PageError } from 'widgets/PageError';
 
 interface ErrorBoundaryProps {
   children: ReactNode;
@@ -35,11 +35,11 @@ class ErrorBoundary
         <Suspense fallback="">
           <PageError />
         </Suspense>
-      )
+      );
     }
 
     return children;
   }
-};
+}
 
 export default ErrorBoundary;

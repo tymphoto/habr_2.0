@@ -3,15 +3,15 @@ import { Button } from 'shared/ui/Button/Button';
 
 // Компоненет для тестирования
 export const BugButton = () => {
-  const [error, setError] = useState(false)
+  const [error, setError] = useState(false);
 
-  const onThrow = () => setError(true)
+  const onThrow = () => setError(true);
 
   useEffect(() => {
     if (error) {
-      throw new Error()
+      throw new Error();
     }
-  }, [error])
+  }, [error]);
 
   return (
     <Button
@@ -20,5 +20,5 @@ export const BugButton = () => {
     >
       throw Error
     </Button>
-  )
-}
+  );
+};

@@ -1,17 +1,17 @@
-import webpack from "webpack";
+import webpack from 'webpack';
 import HTMLWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
-import { BuildOptions } from "./types/config";
+import { BuildOptions } from './types/config';
 
-export function buildPlugins({paths, isDev}: BuildOptions): webpack.WebpackPluginInstance[] {
+export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPluginInstance[] {
   return [
-    //подключение html файла в сборку
+    // подключение html файла в сборку
     new HTMLWebpackPlugin({
       template: paths.html,
-    }), 
+    }),
     // Отображение процесса сборки
-    new webpack.ProgressPlugin(), 
+    new webpack.ProgressPlugin(),
     new MiniCssExtractPlugin({
       filename: 'css/[name.contenthash:8].css',
       chunkFilename: 'css/[name.contenthash:8].css',
@@ -21,7 +21,7 @@ export function buildPlugins({paths, isDev}: BuildOptions): webpack.WebpackPlugi
     }),
     new webpack.HotModuleReplacementPlugin(),
     new BundleAnalyzerPlugin({
-      openAnalyzer: false
+      openAnalyzer: false,
     }),
-  ]
+  ];
 }
