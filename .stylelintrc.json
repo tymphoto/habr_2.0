@@ -1,6 +1,8 @@
 {
   "extends": "stylelint-config-standard-scss",
   "rules": {
-    "selector-class-pattern": null
+    "empty-line-before": "after-rule",
+    "selector-class-pattern": null,
+    "no-invalid-double-slash-comments": false
   }
 }
