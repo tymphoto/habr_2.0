@@ -26,13 +26,13 @@
     }
   ],
   "profile": {
-     "first": "Артем",
-     "lastname": "Тимошенко",
-     "age": 22,
-     "currency": "THB",
-     "country": "Thailand",
-     "city": "Karon Beach",
-     "username": "admin",
-     "avatar": "https://media.licdn.com/dms/image/C4E03AQFKhcDWa19pew/profile-displayphoto-shrink_800_800/0/1658304727327?e=1677110400&v=beta&t=NWmFPljHIMYLawUOHNR4yLGvMwlocxDoZbwMGSI1HRg"
-    }
+    "first": "Артем",
+    "lastname": "Тимошенко",
+    "age": 31,
+    "currency": "THB",
+    "country": "Thailand",
+    "city": "Karon Beach",
+    "username": "admin",
+    "avatar": "https://media.licdn.com/dms/image/C4E03AQFKhcDWa19pew/profile-displayphoto-shrink_800_800/0/1658304727327?e=1677110400&v=beta&t=NWmFPljHIMYLawUOHNR4yLGvMwlocxDoZbwMGSI1HRg"
+  }
 }
