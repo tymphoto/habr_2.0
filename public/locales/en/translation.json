@@ -11,13 +11,16 @@
   "Главная": "Main",
   "О сайте": "About us",
   "Переключить": "Переключить",
-  "Короткий язык": "EN",
+  "Короткий язык": "En",
   "Войти": "Login",
   "increment": "increment",
   "decrement": "decrement",
-  "Введите логин": "Login",
-  "Введите пароль": "Password",
-  "Форма авторизации": "Authorization form",
-  "Вы ввели неверный пароль": "Wrong login or password",
-  "Выйти": "Logout"
+  "Введите username": "Enter username",
+  "Введите пароль": "Enter password",
+  "Форма авторизации": "Auth form",
+  "Вы ввели неверный логин или пароль": "Uncorrect username or password",
+  "Выйти": "Logout",
+  "Укажите валюту": "Choose currency",
+  "Укажите страну": "Choose country",
+  "Профиль": "Profile"
 }
