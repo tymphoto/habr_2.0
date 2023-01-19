@@ -106,13 +106,16 @@
     {
       "id": "1",
       "username": "admin",
-      "password": "123"
+      "password": "123",
+      "role": "ADMIN",
+      "avatar": "https://media.licdn.com/dms/image/C4E03AQFKhcDWa19pew/profile-displayphoto-shrink_800_800/0/1658304727327?e=1677110400&v=beta&t=NWmFPljHIMYLawUOHNR4yLGvMwlocxDoZbwMGSI1HRg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER"
+      "role": "USER",
+      "avatar": "https://images.techinsider.ru/upload/img_cache/028/028272720043b07b91b0a7a1f77361a5_ce_1000x664x0x0_cropped_666x444.jpg"
     }
   ],
   "profile": {
