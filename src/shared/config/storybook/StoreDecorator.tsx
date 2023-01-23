@@ -5,9 +5,9 @@ import { profileReducer } from 'entities/Profile';
 import { AddCommentFormReducer } from 'features/AddCommentForm/model/slices/AddCommentFormSlice';
 import { loginReducer } from 'features/AuthByUserName/model/slice/LoginSlice';
 import { articleDetailsCommentsReducer } from 'pages/ArticleDetailsPage/model/slices/articleDetailsCommentsSlice';
-import { ReducerList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+import { ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 
-const defaultAsyncReducers: ReducerList = {
+const defaultAsyncReducers: ReducersList = {
   loginForm: loginReducer,
   profile: profileReducer,
   articleDetails: articleDetailsReducer,
@@ -17,7 +17,7 @@ const defaultAsyncReducers: ReducerList = {
 
 export const StoreDecorator = (
   state: DeepPartial<StateSchema>,
-  asyncReducers?: ReducerList,
+  asyncReducers?: ReducersList,
 ) => (StoryComponent: Story) => (
   <StoreProvider
     initialState={state}

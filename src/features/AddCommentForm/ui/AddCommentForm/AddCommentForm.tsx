@@ -5,7 +5,7 @@ import { Input } from 'shared/ui/Input/Input';
 import { useSelector } from 'react-redux';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { DynamicModuleLoader, ReducerList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import {
   getAddCommentFormError,
   getAddCommentFormText,
@@ -18,7 +18,7 @@ export interface AddCommentFormProps {
   onSendComment: (text: string) => void;
 }
 
-const reducers: ReducerList = {
+const reducers: ReducersList = {
   addCommentForm: AddCommentFormReducer,
 };
 

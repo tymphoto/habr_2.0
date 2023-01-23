@@ -11,7 +11,7 @@ import { CommentList } from 'entities/Comment';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { AddCommentForm } from 'features/AddCommentForm';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
-import { DynamicModuleLoader, ReducerList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { articleDetailsCommentsReducer, getArticleComments } from '../../model/slices/articleDetailsCommentsSlice';
 import { getArticleCommentsIsLoading } from '../../model/selectors/comments';
 import { fetchCommentsByArticleId } from '../../model/services/fetchCommentsByArticleId/fetchCommentsByArticleId';
@@ -22,7 +22,7 @@ interface ArticleDetailsPageProps {
   className?: string;
 }
 
-const reducers: ReducerList = {
+const reducers: ReducersList = {
   articleDetailsComments: articleDetailsCommentsReducer,
 };
 

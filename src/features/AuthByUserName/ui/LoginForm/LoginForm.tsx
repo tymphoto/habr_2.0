@@ -10,7 +10,7 @@ import { getLoginPassword } from 'features/AuthByUserName/model/selectors/getLog
 import { getLoginLoading } from 'features/AuthByUserName/model/selectors/getLoginLoading/getLoginLoading';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { getLoginError } from 'features/AuthByUserName/model/selectors/getLoginError/getLoginError';
-import { DynamicModuleLoader, ReducerList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { loginByUsername } from '../../model/services/loginByUsername/loginByUsername';
 import cls from './LoginForm.module.scss';
 import { loginActions, loginReducer } from '../../model/slice/LoginSlice';
@@ -20,7 +20,7 @@ export interface LoginFormProps {
   onSuccess: () => void;
 }
 
-const initialReducers: ReducerList = {
+const initialReducers: ReducersList = {
   loginForm: loginReducer,
 };
 

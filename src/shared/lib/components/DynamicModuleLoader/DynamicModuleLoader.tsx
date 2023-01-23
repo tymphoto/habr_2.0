@@ -3,12 +3,12 @@ import { ReduxStoreWithManager, StateSchemaKey } from 'app/providers/StoreProvid
 import React, { useEffect } from 'react';
 import { useDispatch, useStore } from 'react-redux';
 
-export type ReducerList = {
+export type ReducersList = {
   [name in StateSchemaKey]?: Reducer;
 }
 
 interface DynamicModuleLoaderProps {
-  reducers: ReducerList;
+  reducers: ReducersList;
   removeAfterUnmount?: boolean;
 }
 
