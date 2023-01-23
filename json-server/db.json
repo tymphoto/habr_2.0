@@ -11,7 +11,7 @@
       "userId": "2"
     }
   ],
-    "articles": [
+  "articles": [
     {
       "id": "1",
       "title": "Javascript news",
@@ -19,7 +19,9 @@
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
       "views": 1022,
       "createdAt": "26.02.2022",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -100,6 +102,36 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "test",
+      "id": "_vfC87N"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "test",
+      "id": "UYVRygb"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "new test",
+      "id": "mVxgcL7"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "new comment",
+      "id": "0-XYysM"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "text text",
+      "id": "JzYkI7R"
     }
   ],
   "users": [
@@ -118,14 +150,28 @@
       "avatar": "https://images.techinsider.ru/upload/img_cache/028/028272720043b07b91b0a7a1f77361a5_ce_1000x664x0x0_cropped_666x444.jpg"
     }
   ],
-  "profile": {
-    "first": "Артем",
-    "lastname": "Тимошенко",
-    "age": 31,
-    "currency": "THB",
-    "country": "Thailand",
-    "city": "Karon Beach",
-    "username": "admin",
-    "avatar": "https://media.licdn.com/dms/image/C4E03AQFKhcDWa19pew/profile-displayphoto-shrink_800_800/0/1658304727327?e=1677110400&v=beta&t=NWmFPljHIMYLawUOHNR4yLGvMwlocxDoZbwMGSI1HRg"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Артем",
+      "lastname": "Тимошенко",
+      "age": 31,
+      "currency": "THB",
+      "country": "Thailand",
+      "city": "Karon Beach",
+      "username": "admin",
+      "avatar": "https://media.licdn.com/dms/image/C4E03AQFKhcDWa19pew/profile-displayphoto-shrink_800_800/0/1658304727327?e=1677110400&v=beta&t=NWmFPljHIMYLawUOHNR4yLGvMwlocxDoZbwMGSI1HRg"
+    },
+    {
+      "id": "2",
+      "first": "Ната123",
+      "lastname": "Тимошенко",
+      "age": 32,
+      "currency": "THB",
+      "country": "Thailand",
+      "city": "Karon Beach",
+      "username": "not_admin",
+      "avatar": "https://images.techinsider.ru/upload/img_cache/028/028272720043b07b91b0a7a1f77361a5_ce_1000x664x0x0_cropped_666x444.jpg"
+    }
+  ]
 }
