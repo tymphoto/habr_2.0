@@ -4,8 +4,8 @@ import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { getUserAuthData } from 'entities/User';
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
+import { SidebarItemType } from '../../model/type/sidebar';
 import cls from './SidebarItem.module.scss';
-import { SidebarItemType } from '../../model/items';
 
 interface SidebarItemProps {
   item: SidebarItemType;
