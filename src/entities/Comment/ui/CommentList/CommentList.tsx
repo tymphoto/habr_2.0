@@ -2,7 +2,7 @@ import { IComment } from 'entities/Comment/model/types/comment';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { Text } from 'shared/ui/Text/Text';
+import { Text, TextAlign } from 'shared/ui/Text/Text';
 import { CommentCard } from '../CommentCard/CommentCard';
 import cls from './CommentList.module.scss';
 
@@ -37,7 +37,13 @@ export const CommentList = memo((props: CommentListProps) => {
             key={comment.id}
           />
         ))
-        : <Text text={t('Комментарии отсутствуют')} />}
+        : (
+          <Text
+            text={t('Комментарии отсутствуют')}
+            align={TextAlign.CENTER}
+            className={cls.comment}
+          />
+        )}
     </div>
   );
 });
