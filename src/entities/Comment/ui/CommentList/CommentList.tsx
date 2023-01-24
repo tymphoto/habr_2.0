@@ -34,6 +34,7 @@ export const CommentList = memo((props: CommentListProps) => {
             className={cls.comment}
             isLoading={isLoading}
             comment={comment}
+            key={comment.id}
           />
         ))
         : <Text text={t('Комментарии отсутствуют')} />}
