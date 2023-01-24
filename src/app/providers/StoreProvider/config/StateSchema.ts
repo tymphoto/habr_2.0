@@ -10,10 +10,12 @@ import { AddCommentFormSchema } from 'features/AddCommentForm';
 import { LoginSchema } from 'features/AuthByUserName';
 import { ArticleDetailsCommentSchema } from 'pages/ArticleDetailsPage';
 import { ArticlePageSchema } from 'pages/ArticlesPage';
+import { ScrollSaveSchema } from 'widgets/Page';
 
 export interface StateSchema {
   counter: CounterSchema;
   user: UserSchema;
+  savedScroll: ScrollSaveSchema;
 
   // Асинхронные редьюсеры
   loginForm?: LoginSchema;

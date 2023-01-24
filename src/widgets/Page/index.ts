@@ -1,5 +1,5 @@
-import { Page } from './ui/Page';
+export { Page } from './ui/Page';
 
-export {
-  Page,
-};
+export { ScrollSaveSchema } from './model/types/scrollSaveSchema';
+export { getSavedScrollByPath } from './model/selectors/scrollSave';
+export { scrollSaveActions, scrollSaveReducer } from './model/slices/scrollSaveSlice';
