@@ -31,5 +31,14 @@
   "Введите текст комментария": "Add new comment",
   "Отправить": "Send",
   "Читать далее": "Read more...",
-  "Статьи": "Articles"
+  "Статьи": "Articles",
+  "Сортировать по": "Sort by",
+  "Поиск": "Search",
+  "по": "by",
+  "возрастанию": "ascending",
+  "убыванию": "descending",
+  "Айти": "IT",
+  "Экономика": "Econoic",
+  "Все статьи": "All articles",
+  "Наука": "Science"
 }
