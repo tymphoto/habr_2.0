@@ -9,7 +9,6 @@ import {
   getArticlesPageSearch,
   getArticlesPageSort,
   getArticlesPageType,
-  getArticlesPageView,
 } from '../../selectors/articlesPageSelectors';
 
 interface FetchArticlesListProps {
