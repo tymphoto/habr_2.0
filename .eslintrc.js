@@ -22,6 +22,7 @@ module.exports = {
     '@typescript-eslint',
     'i18next',
     'react-hooks',
+    'tymphoto-plugin',
   ],
   rules: {
     'react/jsx-indent': [2, 2],
@@ -57,6 +58,7 @@ module.exports = {
     'no-param-reassign': 'warn',
     'no-undef': 'off',
     'react/no-array-index-key': 'off',
+    'tymphoto-plugin/path-cheker': 'error',
   },
   globals: {
     __IS_DEV__: true,
