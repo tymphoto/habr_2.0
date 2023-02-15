@@ -2,7 +2,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { CurrencySelect } from './CurrencySelect';
 
 export default {
-  title: 'ui/CurrencySelect',
+  title: 'entities/Currency/CurrencySelect',
   component: CurrencySelect,
   argTypes: {
     backgroundColor: { control: 'color' },

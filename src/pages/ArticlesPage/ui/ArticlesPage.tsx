@@ -1,21 +1,13 @@
 import { memo, useCallback } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { useSelector } from 'react-redux';
-import { useSearchParams } from 'react-router-dom';
-import { ArticleList } from 'entities/Article';
-import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { Page } from 'widgets/Page';
 import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import cls from './ArticlesPage.module.scss';
-import { articlesPageReducer, getArticles } from '../model/slices/articlePageSlice';
-import {
-  getArticlesPageIsLoading,
-  getArticlesPageView,
-} from '../model/selectors/articlesPageSelectors';
+import { articlesPageReducer } from '../model/slices/articlePageSlice';
 import { fetchNextArticlePage } from '../model/services/fetchNextArticlePage/fetchNextArticlePage';
-import { initArticlePage } from '../model/services/initArticlesPage/initArticlesPage';
 import { ArticlesPageFilters } from './ArticlesPageFilters/ArticlesPageFilters';
+import { ArticleInfiniteList } from './ArticleInfiniteList/ArticleInfiniteList';
 
 interface ArticlesPageProps {
   className?: string;
@@ -28,18 +20,10 @@ const reducers: ReducersList = {
 const ArticlesPage = (props: ArticlesPageProps) => {
   const { className } = props;
   const dispatch = useAppDispatch();
-  const articles = useSelector(getArticles.selectAll);
-  const isLoading = useSelector(getArticlesPageIsLoading);
-  const view = useSelector(getArticlesPageView);
-  const [searchParams] = useSearchParams();
 
   const onLoadNextPart = useCallback(() => {
     dispatch(fetchNextArticlePage());
   }, [dispatch]);
-
-  useInitialEffect(() => {
-    dispatch(initArticlePage(searchParams));
-  });
 
   return (
     <DynamicModuleLoader reducers={reducers} removeAfterUnmount={false}>
@@ -48,12 +32,7 @@ const ArticlesPage = (props: ArticlesPageProps) => {
         className={classNames(cls.ArticlesPage, {}, [className])}
       >
         <ArticlesPageFilters />
-        <ArticleList
-          className={cls.list}
-          isLoading={isLoading}
-          view={view}
-          articles={articles}
-        />
+        <ArticleInfiniteList className={cls.list} />
       </Page>
     </DynamicModuleLoader>
   );
