@@ -66,3 +66,13 @@ bottomRight.args = {
     { content: '123afdasfas', value: '123' },
   ],
 };
+
+export const haveDisabled = Template.bind({});
+haveDisabled.args = {
+  value: '123',
+  items: [
+    { content: '123fsfadfasdfasdf', value: '123' },
+    { content: '123asfadsfsa', value: '123', disabled: true },
+    { content: '123afdasfas', value: '123', disabled: true },
+  ],
+};
