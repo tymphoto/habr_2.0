@@ -17,8 +17,8 @@ import { getProfileReadonly } from '../../model/selecetors/getProfileReadonly/ge
 import { getProfileValidateErrors } from '../../model/selecetors/getProfileValidateErrors/getProfileValidateErrors';
 import { fetchProfileData } from '../../model/services/fetchProfileData/fetchProfileData';
 import { profileActions, profileReducer } from '../../model/slice/profileSlice';
-import { ValidateProfileError } from '../../model/types/EditableProfileCardSchema';
 import { EditableProfilePageHeader } from '../EditableProfileCardHeader/EditableProfilePageHeader';
+import { ValidateProfileError } from '../../model/consts/consts';
 
 interface EditableProfileCardProps {
   className?: string;
