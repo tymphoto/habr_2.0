@@ -5,10 +5,12 @@ import {
 } from 'react';
 import { Listbox as HListBox } from '@headlessui/react';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { DropdownDirection } from '../../types/ui';
+import { DropdownDirection } from '../../../../types/ui';
+import { mapDirectionClass } from '../../styles/consts';
+import { Button } from '../../../Button/Button';
+import { HStack } from '../../../Stack';
 import cls from './ListBox.module.scss';
-import { Button } from '../Button/Button';
-import { HStack } from '../Stack';
+import popupCls from '../../styles/popups.module.scss';
 
 export interface ListBoxItem {
   value: string;
@@ -26,13 +28,6 @@ interface ListBoxProps {
   direction: DropdownDirection;
   label?: string;
 }
-
-const mapDirectionClass: Record<DropdownDirection, string> = {
-  'bottom left': cls.optionsBottomLeft,
-  'bottom right': cls.optionsBottomRight,
-  'top left': cls.optionsTopLeft,
-  'top right': cls.optionsTopRight,
-};
 
 export const ListBox = memo((props: ListBoxProps) => {
   const {
@@ -54,7 +49,7 @@ export const ListBox = memo((props: ListBoxProps) => {
       <HListBox
         disabled={readonly}
         as="div"
-        className={classNames(cls.ListBox, {}, [className])}
+        className={classNames(cls.ListBox, {}, [className, popupCls.popup])}
         value={value}
         onChange={onChange}
       >
@@ -76,8 +71,8 @@ export const ListBox = memo((props: ListBoxProps) => {
                   className={classNames(
                     cls.item,
                     {
-                      [cls.active]: active,
-                      [cls.disabled]: item.disabled,
+                      [popupCls.active]: active,
+                      [popupCls.disabled]: item.disabled,
                     },
                   )}
                 >
