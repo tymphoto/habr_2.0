@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { Avatar } from 'shared/ui/Avatar/Avatar';
-import { Page } from 'widgets/Page';
+import { Avatar } from '@/shared/ui/Avatar/Avatar';
+import { Page } from '@/widgets/Page';
 
 const ForbiddenPage = () => {
   const { t } = useTranslation();
