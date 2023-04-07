@@ -21,7 +21,7 @@
 
 <h5>Comands to start the project:</h5>
 <p>npm i</p>
-<p>npm run start:dev</p>
+<p>npm run start:dev:vite</p>
 <p>login: user; psw: 123<p>
 
 <h5>If you want to look at this deployed variant - welocme to https://habr2-0.netlify.app/</h5>
