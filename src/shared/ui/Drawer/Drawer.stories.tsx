@@ -1,5 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Drawer } from './Drawer';
+import { Button } from '../Button/Button';
 
 export default {
   title: 'shared/Drawer',
@@ -12,4 +13,7 @@ export default {
 const Template: ComponentStory<typeof Drawer> = (args) => <Drawer {...args} />;
 
 export const Normal = Template.bind({});
-Normal.args = {};
+Normal.args = {
+  children: <Button>Open</Button>,
+  isOpen: true,
+};
