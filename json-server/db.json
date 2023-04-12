@@ -1,5 +1,5 @@
 {
-    "notifications": [
+  "notifications": [
     {
       "id": "1",
       "title": "Уведомление 1",
@@ -676,6 +676,93 @@
       "city": "Karon Beach",
       "username": "not_admin",
       "avatar": "https://images.techinsider.ru/upload/img_cache/028/028272720043b07b91b0a7a1f77361a5_ce_1000x664x0x0_cropped_666x444.jpg"
+    }
+  ],
+  "article-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "articleId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "articleId": "2"
+    },
+    {
+      "userId": "1",
+      "articleId": "3",
+      "rate": 3,
+      "feedback": "",
+      "id": "I7ofk1u"
+    },
+    {
+      "userId": "1",
+      "articleId": "9",
+      "rate": 5,
+      "feedback": "asdasdasdasd",
+      "id": "Y7MhPzo"
+    },
+    {
+      "userId": "1",
+      "articleId": "10",
+      "rate": 1,
+      "feedback": "отстой",
+      "id": "II0a75O"
+    },
+    {
+      "userId": "1",
+      "articleId": "7",
+      "rate": 3,
+      "feedback": "",
+      "id": "bcPnbbZ"
+    },
+    {
+      "userId": "1",
+      "articleId": "6",
+      "rate": 3,
+      "feedback": "test",
+      "id": "cO9OZmS"
+    },
+    {
+      "userId": "1",
+      "articleId": "17",
+      "rate": 3,
+      "id": "AhIXpbS"
+    },
+    {
+      "userId": "1",
+      "articleId": "18",
+      "rate": 5,
+      "feedback": "top",
+      "id": "D2s0bVQ"
+    },
+    {
+      "userId": "1",
+      "articleId": "19",
+      "rate": 4,
+      "feedback": "Good article",
+      "id": "tyJ2lJm"
+    }
+  ],
+  "profile-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "profileId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "profileId": "2"
     }
   ]
 }
