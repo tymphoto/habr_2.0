@@ -4,8 +4,8 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { Navbar } from '@/widgets/Navbar';
 import { Sidebar } from '@/widgets/Sidebar';
 import { getUserInited, userActions } from '@/entities/User';
-import { useTheme } from './providers/ThemeProvider';
 import { AppRouter } from './providers/router';
+import { useTheme } from '@/shared/lib/hooks/useTheme/useTheme';
 
 function App() {
   const { theme } = useTheme();
