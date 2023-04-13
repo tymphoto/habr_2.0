@@ -9,6 +9,15 @@ module.exports = {
     'airbnb',
     'plugin:i18next/recommended',
   ],
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [
+          ['@', './src'],
+        ],
+      },
+    },
+  },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -22,7 +31,7 @@ module.exports = {
     '@typescript-eslint',
     'i18next',
     'react-hooks',
-    'tymphoto-plugin',
+    'ulbi-tv-plugin',
   ],
   rules: {
     'react/jsx-indent': [2, 2],
@@ -60,7 +69,21 @@ module.exports = {
     'no-param-reassign': 'warn',
     'no-undef': 'off',
     'react/no-array-index-key': 'off',
-    'tymphoto-plugin/path-cheker': 'error',
+    'ulbi-tv-plugin/path-checker': ['error', { alias: '@' }],
+    'ulbi-tv-plugin/layer-imports': [
+      'error',
+      {
+        alias: '@',
+        ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+      },
+    ],
+    'ulbi-tv-plugin/public-api-imports': [
+      'error',
+      {
+        alias: '@',
+        testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
+      },
+    ],
   },
   globals: {
     __IS_DEV__: true,

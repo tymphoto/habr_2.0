@@ -623,6 +623,12 @@
       "userId": "1",
       "text": "test",
       "id": "wJ9agrN"
+    },
+    {
+      "articleId": "11",
+      "userId": "1",
+      "text": "test",
+      "id": "BCzeKQy"
     }
   ],
   "users": [
@@ -747,6 +753,13 @@
       "rate": 4,
       "feedback": "Good article",
       "id": "tyJ2lJm"
+    },
+    {
+      "userId": "1",
+      "articleId": "11",
+      "rate": 3,
+      "feedback": "",
+      "id": "o1Anomg"
     }
   ],
   "profile-ratings": [
