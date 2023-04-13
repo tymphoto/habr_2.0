@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { HStack } from '@/shared/ui/Stack';
-import { Button, ButtonTheme } from '@/shared/ui/Button/Button';
+import { Button, ButtonTheme } from '@/shared/ui/Button';
 import { RoutePath } from '@/shared/const/router';
 import { getArticleDetailsData } from '@/entities/Article';
 import { getCanEditAticle } from '../../model/selectors/article';
