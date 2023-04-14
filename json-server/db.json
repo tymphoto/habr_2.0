@@ -658,6 +658,15 @@
         "MANAGER"
       ],
       "avatar": "https://images.techinsider.ru/upload/img_cache/028/028272720043b07b91b0a7a1f77361a5_ce_1000x664x0x0_cropped_666x444.jpg"
+    },
+    {
+      "id": "4",
+      "username": "testUser",
+      "password": "test123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://images.techinsider.ru/upload/img_cache/028/028272720043b07b91b0a7a1f77361a5_ce_1000x664x0x0_cropped_666x444.jpg"
     }
   ],
   "profile": [
