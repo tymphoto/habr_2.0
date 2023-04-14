@@ -3,7 +3,7 @@
 
 *Made on Feature-Sliced Design (FSD) architectural methodology.*
 
-<strong>*Stack of technologies: React, TypeScript, Redux-toolkit, NodeJS, Webpack, Vite, SCSS, Eslint, Stylelint, Jest, Cypress, Storybook, i18n, husky pre-comit, loki.*<strong>
+Stack of technologies: React, TypeScript, Redux-toolkit, NodeJS, Webpack, Vite, SCSS, Eslint, Stylelint, Jest, Cypress, Storybook, i18n, husky pre-comit, loki.
 <p>
 <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1647490619965/P1dsNgj-f1.png" width="50px" height="50px" />
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/768px-Typescript_logo_2020.svg.png" width="50px" height="50px" />
