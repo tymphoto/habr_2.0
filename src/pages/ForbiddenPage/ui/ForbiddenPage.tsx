@@ -5,7 +5,7 @@ import { Page } from '@/widgets/Page';
 const ForbiddenPage = () => {
   const { t } = useTranslation();
   return (
-    <Page>
+    <Page data-testid="ForbiddenPage">
       {t('У Вас нет прав на просмотр этой страницы')}
       <Avatar
         size={500}
