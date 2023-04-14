@@ -28,4 +28,11 @@ describe('User open Article detils page', () => {
     cy.setRate(4, 'feedback');
     cy.get('[data-selected=true]').should('have.length', 4);
   });
+  it('should have possibilites to rate articlу (example with stabs on fixtures)', () => {
+    cy.intercept('GET', '**/articles/*', { fixture: 'article-details.json' });
+    cy.getByTestId('ArticleDetails.Info');
+    cy.getByTestId('RatingCard').scrollIntoView();
+    cy.setRate(4, 'feedback');
+    cy.get('[data-selected=true]').should('have.length', 4);
+  });
 });
