@@ -3,7 +3,7 @@
 
 *Made on Feature-Sliced Design (FSD) architectural methodology.*
 
-<strong>*Stack of technologies: React, TypeScript, Redux-toolkit, NodeJS, Webpack, Vite, SCSS, Eslint, Stylelint, Jest, Storybook, i18n, husky pre-comit, loki.*<strong>
+<strong>*Stack of technologies: React, TypeScript, Redux-toolkit, NodeJS, Webpack, Vite, SCSS, Eslint, Stylelint, Jest, Cypress, Storybook, i18n, husky pre-comit, loki.*<strong>
 <p>
 <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1647490619965/P1dsNgj-f1.png" width="50px" height="50px" />
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/768px-Typescript_logo_2020.svg.png" width="50px" height="50px" />
@@ -15,6 +15,7 @@
 <img src="https://images.credly.com/images/e6eebd0c-6a17-4c06-b172-02ca9f6beb06/eslint.png" width="50px" height="50px" />
 <img src="https://avatars.githubusercontent.com/u/10076935?s=280&v=4" width="50px" height="50px" />
 <img src="https://user-images.githubusercontent.com/10525473/50372432-95dcd880-0611-11e9-9432-58de9be26b3b.png" width="50px" height="50px" />
+<img src="https://asset.brandfetch.io/idIq_kF0rb/idv3zwmSiY.jpeg" width="50px" height="50px" />
 <img src="https://avatars.githubusercontent.com/u/22632046?s=280&v=4" width="50px" height="50px" />
 
 </p>
