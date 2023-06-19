@@ -189,6 +189,25 @@ For async reducers using (so as not to insert them into a common bundle)
 
 ----
 
+### Work wuth feature-flag
+
+Allowed to use feature flags only with the help of the toggleFeatures helper.
+
+An object with options is passed to it:
+
+{
+name: feature flag name,
+on: function that will be executed after enabling the feature,
+off: function that will be executed after disabling the feature
+}
+
+To automatically remove a feature, use the script remove-feature.ts, which accepts 2 arguments:
+
+Name of the feature flag to be removed
+State (on/off)
+
+----
+
 
 ## Entities
 
