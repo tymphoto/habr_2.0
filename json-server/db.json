@@ -1155,6 +1155,10 @@
       "username": "admin",
       "password": "123",
       "roles": ["ADMIN"],
+      "features": {
+        "isArticleRatingEnabled": true,
+        "isCounterEnabled": true
+      },
       "avatar": "https://avatars.githubusercontent.com/u/102980795?v=4"
     },
     {
@@ -1162,6 +1166,10 @@
       "username": "user",
       "password": "123",
       "roles": ["USER"],
+       "features": {
+        "isArticleRatingEnabled": false,
+        "isCounterEnabled": false
+      },
       "avatar": "https://images.techinsider.ru/upload/img_cache/028/028272720043b07b91b0a7a1f77361a5_ce_1000x664x0x0_cropped_666x444.jpg"
     },
     {
@@ -1169,6 +1177,10 @@
       "username": "manager",
       "password": "123",
       "roles": ["MANAGER"],
+       "features": {
+        "isArticleRatingEnabled": true,
+        "isCounterEnabled": true
+      },
       "avatar": "https://images.techinsider.ru/upload/img_cache/028/028272720043b07b91b0a7a1f77361a5_ce_1000x664x0x0_cropped_666x444.jpg"
     },
     {
@@ -1176,6 +1188,10 @@
       "username": "testuser",
       "password": "123",
       "roles": ["ADMIN"],
+       "features": {
+        "isArticleRatingEnabled": true,
+        "isCounterEnabled": false
+      },
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     }
   ],
