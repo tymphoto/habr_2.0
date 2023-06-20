@@ -1254,7 +1254,8 @@
       "jsonSettings": {
         "theme": "app_dark_theme",
         "isFirstVisit": true,
-        "settingPageHasBeenOpen": false
+        "settingPageHasBeenOpen": false,
+        "isArticlesPageWasOpened": true
       },
       "avatar": "https://avatars.githubusercontent.com/u/102980795?v=4"
     },
