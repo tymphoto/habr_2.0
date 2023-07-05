@@ -2,7 +2,7 @@
 @import "variables/global";
 @import "themes/normal";
 @import "themes/dark";
-@import "themes/gray";
+@import "themes/orange";
 
 body,
 .app,
@@ -15,6 +15,13 @@ body,
 .app {
   background: var(--bg-color);
   min-height: 100vh;
+}
+
+.app_redesigned {
+  background: var(--bg-redesigned);
+  min-height: 100vh;
+  font: var(--font-m-redesigned);
+  color: var(--text-redesigned);
 }
 
 .content-page {

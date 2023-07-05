@@ -1,18 +1,18 @@
 import { fireEvent, screen } from '@testing-library/react';
 import { componentRender } from '@/shared/lib/tests/componentrender/componentRender';
-import { Sidebar } from '../Sidebar/Sidebar';
+import { SidebarDeprecated } from './SidebarDeprecated';
 
-describe('Sidebar', () => {
+describe('SidebarDeprecated', () => {
   test('Sidebar render on a screen', () => {
     componentRender(
-      <Sidebar />,
+      <SidebarDeprecated />,
     );
     expect(screen.getByTestId('sidebar')).toBeInTheDocument();
   });
 
   test('test toggle', () => {
     componentRender(
-      <Sidebar />,
+      <SidebarDeprecated />,
     );
     const toggleBtn = screen.getByTestId('sidebar-toggle');
     expect(screen.getByTestId('sidebar')).toBeInTheDocument();

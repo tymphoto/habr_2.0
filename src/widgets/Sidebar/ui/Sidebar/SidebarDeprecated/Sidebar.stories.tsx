@@ -1,18 +1,18 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator';
-import { Sidebar } from './Sidebar';
 import { Theme } from '@/shared/const/theme';
+import { SidebarDeprecated } from './SidebarDeprecated';
 
 export default {
   title: 'widgets/Sidebar',
-  component: Sidebar,
+  component: SidebarDeprecated,
   argTypes: {
     backgroundColor: { control: 'color' },
   },
-} as ComponentMeta<typeof Sidebar>;
+} as ComponentMeta<typeof SidebarDeprecated>;
 
-const Template: ComponentStory<typeof Sidebar> = () => <Sidebar />;
+const Template: ComponentStory<typeof SidebarDeprecated> = () => <SidebarDeprecated />;
 
 export const Light = Template.bind({});
 Light.args = {};
