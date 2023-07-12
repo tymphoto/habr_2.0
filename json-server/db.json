@@ -1272,9 +1272,10 @@
         "isCounterEnabled": false
       },
       "jsonSettings": {
-        "theme": "app_orange_theme",
+        "theme": "app_light_theme",
         "isFirstVisit": true,
-        "settingPageHasBeenOpen": false
+        "settingPageHasBeenOpen": false,
+        "isArticlesPageWasOpened": true
       },
       "avatar": "https://images.techinsider.ru/upload/img_cache/028/028272720043b07b91b0a7a1f77361a5_ce_1000x664x0x0_cropped_666x444.jpg"
     },
