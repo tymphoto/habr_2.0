@@ -6,11 +6,7 @@ import CalendarIcon from '@/shared/assets/icons/calendar-20-20.svg';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { DynamicModuleLoader, ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { Icon } from '@/shared/ui/Icon';
-import { Avatar } from '@/shared/ui/Avatar';
-import { Text, TextAlign, TextSize } from '@/shared/ui/Text';
-import { Skeleton } from '@/shared/ui/Skeleton';
-import { HStack, VStack } from '@/shared/ui/Stack';
+
 import {
   getArticleDetailsData,
   getArticleDetailsError,
@@ -24,6 +20,11 @@ import cls from './ArticleDetails.module.scss';
 import { ArticleCodeBlockComponent } from '../ArticleCodeBlockComponent/ArticleCodeBlockComponent';
 import { ArticleImageBlockComponent } from '../ArticleImageBlockComponent/ArticleImageBlockComponent';
 import { ArticleTextBlockComponent } from '../ArticleTextComponent/ArticleTextBlockComponent';
+import { Skeleton } from '@/shared/ui/deprecated/Skeleton';
+import { Text, TextAlign, TextSize } from '@/shared/ui/deprecated/Text';
+import { HStack, VStack } from '@/shared/ui/deprecated/Stack';
+import { Avatar } from '@/shared/ui/deprecated/Avatar';
+import { Icon } from '@/shared/ui/deprecated/Icon';
 
 interface ArticleDetailsProps {
   className?: string;

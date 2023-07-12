@@ -10,7 +10,7 @@ import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch
 import { PageLoader } from '@/widgets/PageLoader';
 import { ToggleFeatures } from '@/shared/lib/features';
 import { MainLayout } from '@/shared/layout/MainLayout';
-import { Loader } from '@/shared/ui/Loader';
+import { Loader } from '@/shared/ui/deprecated/Loader';
 
 function App() {
   const { theme } = useTheme();

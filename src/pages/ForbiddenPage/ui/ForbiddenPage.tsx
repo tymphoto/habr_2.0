@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Avatar } from '@/shared/ui/Avatar';
+import { Avatar } from '@/shared/ui/deprecated/Avatar';
 import { Page } from '@/widgets/Page';
 
 const ForbiddenPage = () => {

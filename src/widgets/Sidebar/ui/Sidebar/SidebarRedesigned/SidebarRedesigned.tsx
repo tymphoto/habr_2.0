@@ -4,8 +4,8 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { getSidebarItems } from '../../../model/selectors/getSidebarItems';
 import { SidebarItem } from '../../SidebarItem/SidebarItem';
 import cls from './SidebarRedesigned.module.scss';
-import { AppLogo } from '@/shared/ui/AppLogo';
-import { VStack } from '@/shared/ui/Stack';
+import { AppLogo } from '@/shared/ui/deprecated/AppLogo';
+import { VStack } from '@/shared/ui/deprecated/Stack';
 
 interface SidebarRedesignedProps {
   className?: string;
