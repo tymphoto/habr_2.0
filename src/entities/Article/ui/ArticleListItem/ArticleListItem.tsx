@@ -8,7 +8,7 @@ import { Card } from '@/shared/ui/deprecated/Card';
 import { Avatar } from '@/shared/ui/deprecated/Avatar';
 import { Button, ButtonTheme } from '@/shared/ui/deprecated/Button';
 import { getRouteArticleDetails } from '@/shared/const/router';
-import { AppLink } from '@/shared/ui/deprecated/AppLink';
+import { AppLink } from '@/shared/ui/redesigned/AppLink';
 import {
   Article,
   ArticleTextBlock,

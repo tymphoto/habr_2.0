@@ -7,7 +7,7 @@ import { AvatarDropdown } from '@/features/avatarDropdown';
 import { NotificationButton } from '@/features/notificationButton';
 import { getRouteArticleCreate } from '@/shared/const/router';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { AppLink, AppLinkTheme } from '@/shared/ui/deprecated/AppLink';
+import { AppLink } from '@/shared/ui/redesigned/AppLink';
 import { Button, ButtonTheme } from '@/shared/ui/deprecated/Button';
 import { HStack } from '@/shared/ui/deprecated/Stack';
 import { Text, TextTheme } from '@/shared/ui/deprecated/Text';
@@ -52,7 +52,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
             />
             <AppLink
               to={getRouteArticleCreate()}
-              theme={AppLinkTheme.SECONDARY}
+              variant='secondary'
             >
               {t('Создать статью')}
             </AppLink>
