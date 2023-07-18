@@ -9,7 +9,7 @@ import { Country } from '@/entities/Country';
 import { Text, TextTheme } from '@/shared/ui/deprecated/Text';
 import { ProfileCard } from '@/entities/Profile';
 import { DynamicModuleLoader, ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
-import { VStack } from '@/shared/ui/deprecated/Stack';
+import { VStack } from '@/shared/ui/redesigned/Stack';
 import { getProfileForm } from '../../model/selecetors/getProfileForm/getProfileForm';
 import { getProfileError } from '../../model/selecetors/getProfileError/getProfileError';
 import { getProfileIsLoading } from '../../model/selecetors/getProfileIsLoading/getProfileIsLoading';

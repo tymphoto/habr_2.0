@@ -22,7 +22,7 @@ import { ArticleImageBlockComponent } from '../ArticleImageBlockComponent/Articl
 import { ArticleTextBlockComponent } from '../ArticleTextComponent/ArticleTextBlockComponent';
 import { Skeleton } from '@/shared/ui/deprecated/Skeleton';
 import { Text, TextAlign, TextSize } from '@/shared/ui/deprecated/Text';
-import { HStack, VStack } from '@/shared/ui/deprecated/Stack';
+import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 import { Avatar } from '@/shared/ui/deprecated/Avatar';
 import { Icon } from '@/shared/ui/deprecated/Icon';
 

@@ -6,7 +6,7 @@ import { getSidebarItems } from '../../../model/selectors/getSidebarItems';
 import { SidebarItem } from '../../SidebarItem/SidebarItem';
 import cls from './SidebarRedesigned.module.scss';
 import { AppLogo } from '@/shared/ui/redesigned/AppLogo';
-import { VStack } from '@/shared/ui/deprecated/Stack';
+import { VStack } from '@/shared/ui/redesigned/Stack';
 import { Icon } from '@/shared/ui/redesigned/Icon';
 import { ThemeSwitcher } from '@/features/ThemeSwitcher';
 import { LangSwitcher } from '@/features/LangSwitcher';

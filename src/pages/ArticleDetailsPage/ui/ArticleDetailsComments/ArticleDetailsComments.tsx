@@ -7,7 +7,7 @@ import { AddCommentForm } from '@/features/AddCommentForm';
 import { CommentList } from '@/entities/Comment';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
-import { VStack } from '@/shared/ui/deprecated/Stack';
+import { VStack } from '@/shared/ui/redesigned/Stack';
 import { Loader } from '@/shared/ui/deprecated/Loader';
 import { getArticleComments } from '../../model/slices/articleDetailsCommentsSlice';
 import { getArticleCommentsIsLoading } from '../../model/selectors/comments';

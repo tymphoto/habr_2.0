@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { ArticleDetails } from '@/entities/Article';
-import { VStack } from '@/shared/ui/deprecated/Stack';
+import { VStack } from '@/shared/ui/redesigned/Stack';
 import { Page } from '@/widgets/Page';
 import { DynamicModuleLoader, ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { ArticleRecommendationsList } from '@/features/articleRecommendationsList';

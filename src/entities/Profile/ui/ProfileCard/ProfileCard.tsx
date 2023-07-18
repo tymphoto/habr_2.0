@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import { Text, TextAlign, TextTheme } from '@/shared/ui/deprecated/Text';
-import { HStack, VStack } from '@/shared/ui/deprecated/Stack';
+import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 import { Input } from '@/shared/ui/deprecated/Input';
 import { Loader } from '@/shared/ui/deprecated/Loader';
 import { Avatar } from '@/shared/ui/deprecated/Avatar';

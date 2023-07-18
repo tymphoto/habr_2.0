@@ -7,7 +7,7 @@ import { getSidebarItems } from '../../../model/selectors/getSidebarItems';
 import { SidebarItem } from '../../SidebarItem/SidebarItem';
 import cls from './SidebarDeprecated.module.scss';
 import { Button, ButtonSize, ButtonTheme } from '@/shared/ui/deprecated/Button';
-import { VStack } from '@/shared/ui/deprecated/Stack';
+import { VStack } from '@/shared/ui/redesigned/Stack';
 
 interface SidebarDeprecatedProps {
   className?: string;
