@@ -10,7 +10,6 @@ import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch
 import { PageLoader } from '@/widgets/PageLoader';
 import { ToggleFeatures } from '@/shared/lib/features';
 import { MainLayout } from '@/shared/layout/MainLayout';
-import { Loader } from '@/shared/ui/deprecated/Loader';
 
 function App() {
   const { theme } = useTheme();
@@ -46,7 +45,6 @@ function App() {
               header={<Navbar />}
               content={<AppRouter />}
               sidebar={<Sidebar />}
-              toolbar={<Loader />}
             />
           </Suspense>
         </div>
