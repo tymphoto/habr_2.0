@@ -2,17 +2,17 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import AvatarImg from '@/shared/assets/test/storybook.jpeg';
 import { Country } from '@/entities/Country';
 import { Currency } from '@/entities/Currency';
-import { ProfileCard } from './ProfileCard';
+import { ProfileCardRedesigned } from './ProfileCardRedesigned';
 
 export default {
-  title: 'entities/Profile/ProfileCard',
-  component: ProfileCard,
+  title: 'entities/Profile/ProfileCardRedesigned',
+  component: ProfileCardRedesigned,
   argTypes: {
     backgroundColor: { control: 'color' },
   },
-} as ComponentMeta<typeof ProfileCard>;
+} as ComponentMeta<typeof ProfileCardRedesigned>;
 
-const Template: ComponentStory<typeof ProfileCard> = (args) => <ProfileCard {...args} />;
+const Template: ComponentStory<typeof ProfileCardRedesigned> = (args) => <ProfileCardRedesigned {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
