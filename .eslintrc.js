@@ -8,14 +8,12 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
     'plugin:i18next/recommended',
-    'prettier'
+    'prettier',
   ],
   settings: {
     'import/resolver': {
       alias: {
-        map: [
-          ['@', './src'],
-        ],
+        map: [['@', './src']],
       },
     },
   },
@@ -73,9 +71,8 @@ module.exports = {
           'feature',
           'color',
           'variant',
-          's',
-          'm',
-          'l'
+          'size',
+          'wrap',
         ],
       },
     ],
@@ -99,11 +96,15 @@ module.exports = {
       'error',
       {
         alias: '@',
-        testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
+        testFilesPatterns: [
+          '**/*.test.*',
+          '**/*.story.*',
+          '**/StoreDecorator.tsx',
+        ],
       },
     ],
-    'react/jsx-max-props-per-line': ['error', { maximum: 3 } ],
-    'react/no-unstable-nested-components': 'warn'
+    'react/jsx-max-props-per-line': ['error', { maximum: 3 }],
+    'react/no-unstable-nested-components': 'warn',
   },
   globals: {
     __IS_DEV__: true,

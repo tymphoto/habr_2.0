@@ -16,6 +16,12 @@ interface ArticleListItemSkeletonProps {
 export const ArticleListItemSkeleton = memo((props: ArticleListItemSkeletonProps) => {
   const { className, view } = props;
 
+  const mainClass = toggleFeatures({
+    name: 'isAppRedesigned',
+    on: () => cls.ArticleListItemRedesigned,
+    off: () => cls.ArticleListItem,
+  })
+
   const Skeleton = toggleFeatures({
     name: 'isAppRedesigned',
     on: () => SkeletonRedesigned,
@@ -29,8 +35,8 @@ export const ArticleListItemSkeleton = memo((props: ArticleListItemSkeletonProps
 
   if (view === ArticleView.BIG) {
     return (
-      <div className={classNames(cls.ArticleListItem, {}, [className, cls[view]])}>
-        <CardDeprecated className={cls.card}>
+      <div className={classNames(mainClass, {}, [className, cls[view]])}>
+        <Card className={cls.card}>
           <div className={cls.header}>
             <Skeleton width={30} height={30} border="50%" />
             <Skeleton width={150} height={16} className={cls.username} />
@@ -41,14 +47,14 @@ export const ArticleListItemSkeleton = memo((props: ArticleListItemSkeletonProps
           <div className={cls.footer}>
             <Skeleton width={200} height={36} />
           </div>
-        </CardDeprecated>
+        </Card>
       </div>
     );
   }
 
   return (
     <div className={classNames(cls.ArticleListItem, {}, [className, cls[view]])}>
-      <CardDeprecated className={cls.card}>
+      <Card className={cls.card}>
         <div className={cls.imageWrapper}>
           <Skeleton width={200} height={200} className={cls.image} />
         </div>
@@ -56,7 +62,7 @@ export const ArticleListItemSkeleton = memo((props: ArticleListItemSkeletonProps
           <Skeleton width={130} height={16} className={cls.image} />
         </div>
         <Skeleton width={150} height={16} className={cls.title} />
-      </CardDeprecated>
+      </Card>
     </div>
   );
 });
