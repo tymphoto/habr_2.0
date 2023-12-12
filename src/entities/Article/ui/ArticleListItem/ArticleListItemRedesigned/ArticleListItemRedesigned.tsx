@@ -1,7 +1,6 @@
-/* eslint-disable i18next/no-literal-string */
 import { memo } from 'react';
 import EyeIcon from '@/shared/assets/icons/eye.svg';
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './ArticleListItemRedesigned.module.scss';
 import { ArticleListItemProps } from '../ArticleListItem';
@@ -23,7 +22,7 @@ import {
 
 export const ArticleListItemRedesigned = memo((props: ArticleListItemProps) => {
   const { className, article, view = ArticleView.BIG, target } = props;
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
 
   const userInfo = (
     <>
@@ -78,8 +77,7 @@ export const ArticleListItemRedesigned = memo((props: ArticleListItemProps) => {
               to={getRouteArticleDetails(article.id)}
             >
               <Button variant="outline">
-                {/* {t('Читать далее...')} */}
-                Читать далее...
+                {t('Читать далее')}
               </Button>
             </AppLink>
             {views}
