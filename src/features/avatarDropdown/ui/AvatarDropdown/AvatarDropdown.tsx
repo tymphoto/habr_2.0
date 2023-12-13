@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Dropdown as DropdownDeprecated } from '@/shared/ui/deprecated/Popups';
-import { getRouteAdmin, getRouteProfile } from '@/shared/const/router';
+import { getRouteAdmin, getRouteProfile, getRouteSettings } from '@/shared/const/router';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import {
   getUserAuthData, isUserAdmin, isUserManager, userActions,
@@ -39,6 +39,10 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
       content: t('Админка'),
       href: getRouteAdmin(),
     }] : []),
+    {
+      content: t('Настройки'),
+      href: getRouteSettings(),
+    },
     {
       content: t('Профиль'),
       href: getRouteProfile(authData.id),

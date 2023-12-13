@@ -58,5 +58,10 @@
   "Рейтинг": "Rating",
   "Оценка статей скоро появится": "Rating coming soon",
   "Добро пожаловать на страницу статей": "Welcome to articles page",
-  "Здесь вы можете искать и просматривать статьи на различные темы": "Here you can look for and read articles with defferent themes"
+  "Здесь вы можете искать и просматривать статьи на различные темы": "Here you can look for and read articles with defferent themes",
+  "Настройки": "Settings",
+  "Пользовательские настройки": "User settings",
+  "Старый": "Old",
+  "Новый": "New",
+  "Вариант интерфейса": "Interface variant"
 }
