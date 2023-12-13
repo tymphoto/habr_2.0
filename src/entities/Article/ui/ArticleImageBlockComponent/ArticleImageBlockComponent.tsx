@@ -1,8 +1,9 @@
-import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Text, TextAlign } from '@/shared/ui/deprecated/Text';
+import { Text as TextDeprecated, TextAlign } from '@/shared/ui/deprecated/Text';
+import { Text as TextRedesigned } from '@/shared/ui/redesigned/Text';
 import { ArticleImageBlock } from '../../model/types/article';
 import cls from './ArticleImageBlockComponent.module.scss';
+import { ToggleFeatures } from '@/shared/lib/features';
 
 interface ArticleImageBlockComponentProps {
   className?: string;
@@ -11,15 +12,15 @@ interface ArticleImageBlockComponentProps {
 
 export const ArticleImageBlockComponent = (props: ArticleImageBlockComponentProps) => {
   const { className, block } = props;
-  const { t } = useTranslation();
 
   return (
     <div className={classNames(cls.ArticleImageBlockComponent, {}, [className])}>
       <img src={block.src} alt={block.title} className={cls.img} />
       {block.title && (
-        <Text
-          text={block.title}
-          align={TextAlign.LEFT}
+        <ToggleFeatures
+          feature="isAppRedesigned"
+          on={<TextRedesigned title={block.title} />}
+          off={<TextDeprecated title={block.title} align={TextAlign.CENTER} />}
         />
       )}
     </div>
