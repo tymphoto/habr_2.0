@@ -63,5 +63,8 @@
   "Пользовательские настройки": "User settings",
   "Старый": "Old",
   "Новый": "New",
-  "Вариант интерфейса": "Interface variant"
+  "Вариант интерфейса": "Interface variant",
+  "{{count}} просмотров_zero": "{{count}} views",
+  "{{count}} просмотров_one": "{{count}} view",
+  "{{count}} просмотров_other": "{{count}} views"
 }
