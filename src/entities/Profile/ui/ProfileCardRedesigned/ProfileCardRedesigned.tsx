@@ -77,6 +77,7 @@ export const ProfileCardRedesigned = (props: ProfileCardRedesignedProps) => {
     <Card
       className={classNames(cls.ProfileCardRedesigned, {}, [className])}
       padding='24'
+      border='partial'
     >
       <HStack gap="24" max>
         <VStack gap="16" max>
