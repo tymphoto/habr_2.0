@@ -15,7 +15,6 @@ import {
 import { fetchArticleById } from '../../model/services/fetchArticleById/fetchArticleById';
 import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';
 import cls from './ArticleDetails.module.scss';
-import { Skeleton as SkeletonDeprecated } from '@/shared/ui/deprecated/Skeleton';
 import { Skeleton as SkeletonRedesigned } from '@/shared/ui/redesigned/Skeleton';
 import { Text as TextDeprecated, TextAlign, TextSize } from '@/shared/ui/deprecated/Text';
 import { Text as TextRedesigned } from '@/shared/ui/redesigned/Text';
@@ -25,6 +24,7 @@ import { Icon } from '@/shared/ui/deprecated/Icon';
 import { renderArticleBlock } from './renderArticleBlock';
 import { ToggleFeatures } from '@/shared/lib/features';
 import { AppImage } from '@/shared/ui/redesigned/AppImage';
+import { ArticleDetailsSkeleton } from './ArticleDetailsSkeleton';
 
 interface ArticleDetailsProps {
   className?: string;
@@ -106,20 +106,7 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
   let content;
 
   if (isLoading) {
-    content = (
-      <>
-        <SkeletonDeprecated
-          className={cls.avatar}
-          width={200}
-          height={200}
-          border="50%"
-        />
-        <SkeletonDeprecated className={cls.title} width={300} height={32} />
-        <SkeletonDeprecated className={cls.skeleton} width={600} height={24} />
-        <SkeletonDeprecated className={cls.skeleton} width="100%" height={200} />
-        <SkeletonDeprecated className={cls.skeleton} width="100%" height={200} />
-      </>
-    );
+    content = <ArticleDetailsSkeleton />;
   } else if (error) {
     content = (
       <div>

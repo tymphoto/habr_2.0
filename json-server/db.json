@@ -1237,6 +1237,12 @@
       "userId": "4",
       "text": "text",
       "id": "hRqsm5q"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nesciunt cum quam, doloribus asperiores quidem reprehenderit ducimus alias veniam ex ipsa natus beatae quod labore possimus! Nisi cum harum explicabo!",
+      "id": "b9KJhjW"
     }
   ],
   "users": [
@@ -1253,7 +1259,7 @@
         "isAppRedesigned": true
       },
       "jsonSettings": {
-        "theme": "app_light_theme",
+        "theme": "app_dark_theme",
         "isFirstVisit": true,
         "settingPageHasBeenOpen": false,
         "isArticlesPageWasOpened": true
