@@ -7,7 +7,7 @@ import { Popover as PopoverDeprecated } from '@/shared/ui/deprecated/Popups';
 import { Button as ButtonDeprecated, ButtonTheme } from '@/shared/ui/deprecated/Button';
 import { Icon as IconDeprecated } from '@/shared/ui/deprecated/Icon';
 import { NotificationList } from '@/entities/Notification';
-import { Drawer } from '@/shared/ui/deprecated/Drawer';
+import { Drawer } from '@/shared/ui/redesigned/Drawer';
 import cls from './NotificationButton.module.scss';
 import { ToggleFeatures } from '@/shared/lib/features';
 import { Icon } from '@/shared/ui/redesigned/Icon';
@@ -65,7 +65,7 @@ export const NotificationButton = memo((props: NotificationButtonProps) => {
             >
               <NotificationList className={cls.notifications} />
             </Popover>
-           }
+          }
           off={
             <PopoverDeprecated
               className={classNames(cls.NotificationButton, {}, [className])}

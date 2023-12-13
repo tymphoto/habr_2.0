@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Drawer } from './Drawer';
-import { Button } from '../Button/Button';
+import { Button } from '../../deprecated/Button/Button';
 
 export default {
   title: 'shared/Drawer',
