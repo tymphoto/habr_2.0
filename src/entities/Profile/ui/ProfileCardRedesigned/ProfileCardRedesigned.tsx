@@ -1,14 +1,14 @@
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Text, TextAlign, TextTheme } from '@/shared/ui/deprecated/Text';
 import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
-import { Loader } from '@/shared/ui/deprecated/Loader';
 import { Currency, CurrencySelect } from '@/entities/Currency';
 import { Country, CountrySelect } from '@/entities/Country';
 import { Profile } from '../../model/types/profile';
 import cls from './ProfileCardRedesigned.module.scss';
 import { Input } from '@/shared/ui/redesigned/Input';
 import { Card } from '@/shared/ui/redesigned/Card';
+import { Text } from '@/shared/ui/redesigned/Text';
+import { Skeleton } from '@/shared/ui/redesigned/Skeleton';
 
 interface ProfileCardRedesignedProps {
   className?: string;
@@ -46,13 +46,24 @@ export const ProfileCardRedesigned = (props: ProfileCardRedesignedProps) => {
 
   if (isLoading) {
     return (
-      <HStack
-        className={classNames(cls.ProfileCard, { [cls.loading]: true }, [className])}
-        justify="center"
-        max
-      >
-        <Loader />
-      </HStack>
+        <VStack align='center' max>
+          <HStack max>
+            <Skeleton border='20px' />
+            <Skeleton border='20px' />
+          </HStack>
+          <HStack max>
+            <Skeleton border='20px' />
+            <Skeleton border='20px' />
+          </HStack>
+          <HStack max>
+            <Skeleton border='20px' />
+            <Skeleton border='20px' />
+          </HStack>
+          <HStack max>
+            <Skeleton border='20px' />
+            <Skeleton border='20px' />
+          </HStack>
+        </VStack>
     );
   }
 
@@ -64,10 +75,9 @@ export const ProfileCardRedesigned = (props: ProfileCardRedesignedProps) => {
         max
       >
         <Text
-          theme={TextTheme.ERROR}
+          variant='error'
           title={t('Произошла ошибка при загрузке профиля')}
           text={t('Попробуйте обновить страницу')}
-          align={TextAlign.CENTER}
         />
       </HStack>
     );
