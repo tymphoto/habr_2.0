@@ -4,7 +4,6 @@
 @import "themes/dark";
 @import "themes/orange";
 
-body,
 .app {
   font: var(--font-m);
   color: var(--primary-color);
@@ -24,16 +23,31 @@ body,
 }
 
 *::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;              /* ширина всей полосы прокрутки */
+  width: 12px;               /* ширина scrollbar */
+  height: 8px;
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--card-bg);        /* цвет зоны отслеживания */
+  background: var(--light-bg-redesigned);        /* цвет дорожки */
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--inverted-primary-color);    /* цвет бегунка */
-  border-radius: 20px;       /* округлось бегунка */
-  border: 2px solid var(--primary-color);  /* отступ вокруг бегунка */
+  background-color: var(--icon-redesigned);    /* цвет плашки */
+  border-radius: 20px;       /* закругления плашки */
+  border: 1px solid var(--accent-redesigned);  /* padding вокруг плашки */
+}
+
+.app *::-webkit-scrollbar {
+  width: 12px;               /* ширина scrollbar */
+  height: 8px;
+}
+
+.app *::-webkit-scrollbar-track {
+  background: var(--card-bg);        /* цвет дорожки */
+}
+
+.app *::-webkit-scrollbar-thumb {
+  background-color: var(--inverted-primary-color);    /* цвет плашки */
+  border-radius: 20px;       /* закругления плашки */
+  border: 2px solid var(--primary-color);  /* padding вокруг плашки */
 }

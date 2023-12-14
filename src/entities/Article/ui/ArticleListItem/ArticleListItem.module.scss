@@ -27,15 +27,15 @@
     margin: 16px 0;
   }
 
-  .textBlock {
-    max-height: 200px;
-    overflow-y: hidden;
-    margin-bottom: 20px;
-  }
-
   .footer {
     display: flex;
     align-items: center;
+    margin-top: 16px;
+  }
+
+  .textBlock {
+    max-height: 200px;
+    overflow-y: hidden;
   }
 }
 
@@ -45,10 +45,10 @@
   cursor: pointer;
 
   .date {
-    display: none;
     position: absolute;
     right: 0;
     top: 0;
+    display: none;
   }
 
   &:hover {
@@ -90,15 +90,27 @@
     margin-right: 8px;
   }
 
-  title {
+  .title {
     margin-top: 8px;
   }
 
   .title p {
     width: 200px;
-    margin-top: 8px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+}
+
+.ArticleListItemRedesigned {
+  &.BIG {
+    width: 100%;
+  }
+
+  &.SMALL {
+    .card {
+      height: 350px;
+      width: 240px;
+    }
   }
 }
