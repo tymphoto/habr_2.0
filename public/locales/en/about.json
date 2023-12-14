@@ -1,3 +1,6 @@
 {
-  "О сайте" : "About us"
+  "О сайте": "About us",
+  "Описание": "Welcome to Habr 2.0 - my own project created within the architectural methodology of Feature-Sliced Design (FSD). This is a social network tailored for developers, developed using the following technology stack: React, TypeScript, Redux-toolkit, NodeJS, Webpack, Vite, SCSS, Eslint, Stylelint, Jest, Cypress, Storybook, i18n, husky pre-commit, loki.",
+  "Сценарий": "You can navigate to the 'Profile' and 'Articles' pages - that's where the main magic happens. Additionally, you can change the language to either English or Russian, and choose between dark, light, and very light themes. =)",
+  "Github": "Welcome to my github!"
 }

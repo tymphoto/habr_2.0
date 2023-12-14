@@ -11,9 +11,6 @@ export function useAppToolbar() {
   const toolbarByAppRoute: OptionalRecord<AppRoutes, ReactElement> = {
     [AppRoutes.ARTICLES]: <ScrollToolbar />,
     [AppRoutes.ARICLE_DETAILS]: <ScrollToolbar />,
-    // TO DO: fix it for MAIN and ABOUT
-    [AppRoutes.MAIN]: <div>{t('Главная страница')}</div>,
-    [AppRoutes.ABOUT]: <div>{t('О сайте')}</div>,
   }
 
   return toolbarByAppRoute[appRoute];
